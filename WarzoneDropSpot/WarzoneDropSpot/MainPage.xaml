@@ -3,18 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WarzoneDropSpot.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Cruelant's Warzone Drop Spot" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
-        </Frame>
-        <Button IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked"/>
+    <StackLayout BackgroundColor="DarkSlateGray">
 
-        <AbsoluteLayout>
+        <Label Padding="30" FontAttributes="Bold" Text="Cruelant's Warzone Drop Spot" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+
+        <Button Padding="10" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked"/>
+
+        <Label Padding="10" Text="{Binding ModifierText}" HorizontalTextAlignment="Center" TextColor="Red" FontSize="18"/>
+        
+        <Label Text="*Proudly brought to you by Larry Salves Ointment!" HorizontalTextAlignment="End" Padding="0,0,10,0" TextColor="White" FontSize="8"/>
+
+        <AbsoluteLayout Padding="10">
             <Image Source="warzonemap.jpg"/>
             <Image IsVisible="{Binding CrosshairEnabled}" Source="crosshair.png" Scale="0.5" AnchorX="{Binding XPos}" AnchorY="{Binding YPos}"/>
         </AbsoluteLayout>
-        <StackLayout>
-            <Label VerticalTextAlignment="End" Text="Hit the button below to be told where to drop, since you're way too indecisive to decide on your own!" FontSize="10" Padding="30,0,30,0"/>
-        </StackLayout>
     </StackLayout>
 </ContentPage>
