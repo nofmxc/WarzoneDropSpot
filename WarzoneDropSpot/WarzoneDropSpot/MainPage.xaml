@@ -8,9 +8,11 @@
             <Label Text="Welcome to Cruelant's Warzone Drop Spot" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
         </Frame>
         <Label Text="Hit the button below to be told where to drop, since you're way too indecisive to decide on your own!" FontSize="16" Padding="30,0,30,0"/>
+        <Button Text = "Geronimo!" Clicked = "OnButtonClicked">
+        </Button>
         <AbsoluteLayout>
             <Image Source="warzonemap.jpg"/>
-            <Image Source="crosshair.png" Scale="0.25" AnchorX=".25" AnchorY=".75"/>
+            <Image IsVisible="{Binding crosshairEnabled}" Source="crosshair.png" Scale="0.25" AnchorX="{Binding xPos}" AnchorY="{Binding yPos}"/>
         </AbsoluteLayout>
     </StackLayout>
 </ContentPage>
