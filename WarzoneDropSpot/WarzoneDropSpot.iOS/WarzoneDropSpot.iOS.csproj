@@ -133,4 +133,7 @@
       <Name>WarzoneDropSpot</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\warzonemap.jpg" />
+  </ItemGroup>
 </Project>
