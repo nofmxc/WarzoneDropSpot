@@ -7,12 +7,14 @@
         <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Cruelant's Warzone Drop Spot" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
         </Frame>
-        <Label Text="Hit the button below to be told where to drop, since you're way too indecisive to decide on your own!" FontSize="16" Padding="30,0,30,0"/>
-        <Button Text = "Geronimo!" Clicked = "OnButtonClicked">
-        </Button>
+        <Button IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked"/>
+
         <AbsoluteLayout>
             <Image Source="warzonemap.jpg"/>
-            <Image IsVisible="{Binding crosshairEnabled}" Source="crosshair.png" Scale="0.25" AnchorX="{Binding xPos}" AnchorY="{Binding yPos}"/>
+            <Image IsVisible="{Binding CrosshairEnabled}" Source="crosshair.png" Scale="0.5" AnchorX="{Binding XPos}" AnchorY="{Binding YPos}"/>
         </AbsoluteLayout>
+        <StackLayout>
+            <Label VerticalTextAlignment="End" Text="Hit the button below to be told where to drop, since you're way too indecisive to decide on your own!" FontSize="10" Padding="30,0,30,0"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

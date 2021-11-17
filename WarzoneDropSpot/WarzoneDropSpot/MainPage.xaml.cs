@@ -5,34 +5,54 @@ namespace WarzoneDropSpot
 {
     public partial class MainPage : ContentPage
     {
-        private double _xPos;
-        public double xPos
+        private string _ButtonText = "Press for drop spot. Geronimo!";
+        public string ButtonText
         {
-            get { return _xPos; }
-            set
-            {
-                _xPos = value;
-                OnPropertyChanged(nameof(xPos)); // Notify that there was a change on this property
+            get { return _ButtonText; }
+            set 
+            { 
+                _ButtonText = value;
+                OnPropertyChanged(nameof(ButtonText)); // Notify that there was a change on this property
             }
         }
-        private double _yPos;
-        public double yPos
+        private double _XPos;
+        public double XPos
         {
-            get { return _yPos; }
+            get { return _XPos; }
             set
             {
-                _yPos = value;
-                OnPropertyChanged(nameof(yPos)); // Notify that there was a change on this property
+                _XPos = value;
+                OnPropertyChanged(nameof(XPos)); // Notify that there was a change on this property
             }
         }
-        private bool _crosshairEnabled;
-        public bool crosshairEnabled
+        private double _YPos;
+        public double YPos
         {
-            get { return _crosshairEnabled; }
+            get { return _YPos; }
             set
             {
-                _crosshairEnabled = value;
-                OnPropertyChanged(nameof(crosshairEnabled)); // Notify that there was a change on this property
+                _YPos = value;
+                OnPropertyChanged(nameof(YPos)); // Notify that there was a change on this property
+            }
+        }
+        private bool _CrosshairEnabled;
+        public bool CrosshairEnabled
+        {
+            get { return _CrosshairEnabled; }
+            set
+            {
+                _CrosshairEnabled = value;
+                OnPropertyChanged(nameof(CrosshairEnabled)); // Notify that there was a change on this property
+            }
+        }
+        private bool _ButtonEnabled = true;
+        public bool ButtonEnabled
+        {
+            get { return _ButtonEnabled; }
+            set
+            {
+                _ButtonEnabled = value;
+                OnPropertyChanged(nameof(ButtonEnabled)); // Notify that there was a change on this property
             }
         }
 
@@ -45,9 +65,11 @@ namespace WarzoneDropSpot
 
         void OnButtonClicked(object sender, EventArgs args)
         {
-            xPos = new Random().NextDouble();
-            yPos = new Random().NextDouble();
-            crosshairEnabled = true;
+            XPos = new Random().NextDouble();
+            YPos = new Random().NextDouble();
+            CrosshairEnabled = true;
+            ButtonText = "Don't second guess it!";
+            ButtonEnabled = false;
         }
     }
 }
