@@ -9,7 +9,8 @@ namespace WarzoneDropSpot
         private int secondsToWait = originalSecondsToWait;
         private const string OriginalButtonText = "Press for drop spot";
         private const string DropModifierTextTemplate = "Drop Modifier: {0}";
-        private const string WaitingButtonTextTemplate = "Don't second guess it! (Next drop allowed in {0} seconds)";
+        private const string WaitingButtonText = "Don't second guess it!";
+        private const string ButtonHintTextTemplate = "(Next drop allowed in {0} seconds)";
         private string _ModifierText = string.Empty;
         public string ModifierText
         {
@@ -24,10 +25,20 @@ namespace WarzoneDropSpot
         public string ButtonText
         {
             get { return _ButtonText; }
-            set 
-            { 
+            set
+            {
                 _ButtonText = value;
                 OnPropertyChanged(nameof(ButtonText)); // Notify that there was a change on this property
+            }
+        }
+        private string _ButtonHintText = "";
+        public string ButtonHintText
+        {
+            get { return _ButtonHintText; }
+            set
+            {
+                _ButtonHintText = value;
+                OnPropertyChanged(nameof(ButtonHintText)); // Notify that there was a change on this property
             }
         }
         private double _XPos;
@@ -70,7 +81,16 @@ namespace WarzoneDropSpot
                 OnPropertyChanged(nameof(ButtonEnabled)); // Notify that there was a change on this property
             }
         }
-
+        private bool _ButtonHintEnabled = false;
+        public bool ButtonHintEnabled
+        {
+            get { return _ButtonHintEnabled; }
+            set
+            {
+                _ButtonHintEnabled = value;
+                OnPropertyChanged(nameof(ButtonHintEnabled)); // Notify that there was a change on this property
+            }
+        }
         public MainPage()
         {
             InitializeComponent();
@@ -83,7 +103,9 @@ namespace WarzoneDropSpot
             XPos = new Random().NextDouble();
             YPos = new Random().NextDouble();
             CrosshairEnabled = true;
-            ButtonText = string.Format(WaitingButtonTextTemplate, secondsToWait);
+            ButtonText = WaitingButtonText;
+            ButtonHintEnabled = true;
+            ButtonHintText = string.Format(ButtonHintTextTemplate, secondsToWait);
             ButtonEnabled = false;
             ModifierText = string.Format(DropModifierTextTemplate, GetRandomDropModifier());
             Device.StartTimer(new TimeSpan(0, 0, 1), () =>
@@ -112,6 +134,7 @@ namespace WarzoneDropSpot
         {
             ButtonText = OriginalButtonText;
             ButtonEnabled = true;
+            ButtonHintEnabled = false;
             secondsToWait = originalSecondsToWait;
             CrosshairEnabled = false;
             ModifierText = string.Empty;
@@ -119,7 +142,7 @@ namespace WarzoneDropSpot
         void CountDownButton()
         {
             secondsToWait--;
-            ButtonText = string.Format(WaitingButtonTextTemplate, secondsToWait);
+            ButtonHintText = string.Format(ButtonHintTextTemplate, secondsToWait);
         }
 
         public string GetRandomDropModifier()

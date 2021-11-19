@@ -7,16 +7,17 @@
 
         <Label Padding="30" FontAttributes="Bold" Text="Cruelant's Warzone Drop Spot" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
 
-        <Button Padding="10" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked"/>
+            <Button Padding="10" BackgroundColor="WhiteSmoke" TextColor="Black" HorizontalOptions="Center" IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked"/>
+            <Label Padding="5" HorizontalOptions="Center" TextColor="White" IsVisible="{Binding ButtonHintEnabled}" Text="{Binding ButtonHintText}"/>
 
-        <Label Padding="10" Text="{Binding ModifierText}" HorizontalTextAlignment="Center" TextColor="Red" FontSize="18"/>
+            <Label Padding="10" Text="{Binding ModifierText}" HorizontalTextAlignment="Center" TextColor="Red" FontSize="18"/>
 
         <Label Text="*Proudly brought to you by Larry Salves Ointment!" HorizontalTextAlignment="End" Padding="0,0,10,0" TextColor="White" FontSize="8"/>
 
-        <AbsoluteLayout Padding="10">
-            <Image Source="warzonemap.jpg"/>
-            <Image IsVisible="{Binding CrosshairEnabled}" Source="crosshair.png" Scale="0.5" AnchorX="{Binding XPos}" AnchorY="{Binding YPos}"/>
-        </AbsoluteLayout>
+            <AbsoluteLayout Padding="10">
+                <Image Source="warzonemap.jpg"/>
+                <Image IsVisible="{Binding CrosshairEnabled}" Source="crosshair.png" Scale="0.5" AnchorX="{Binding XPos}" AnchorY="{Binding YPos}"/>
+            </AbsoluteLayout>
     </StackLayout>
     </ScrollView>
 </ContentPage>
