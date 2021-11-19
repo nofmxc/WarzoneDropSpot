@@ -7,7 +7,18 @@
 
         <Label Padding="30" FontAttributes="Bold" Text="Cruelant's Warzone Drop Spot" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
 
-            <Button Padding="10" BackgroundColor="WhiteSmoke" TextColor="Black" HorizontalOptions="Center" IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked"/>
+            <Button Padding="10" HorizontalOptions="Center" IsEnabled="{Binding ButtonEnabled}" Text="{Binding ButtonText}" Clicked="OnButtonClicked">
+                <Button.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="White" />
+                    </OnPlatform>
+                </Button.BackgroundColor>
+                <Button.TextColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="DarkSlateGray" />
+                    </OnPlatform>
+                </Button.TextColor>
+            </Button>
             <Label Padding="5" HorizontalOptions="Center" TextColor="White" IsVisible="{Binding ButtonHintEnabled}" Text="{Binding ButtonHintText}"/>
 
             <Label Padding="10" Text="{Binding ModifierText}" HorizontalTextAlignment="Center" TextColor="Red" FontSize="18"/>
