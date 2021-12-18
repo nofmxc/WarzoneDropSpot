@@ -27,7 +27,7 @@
 
             <AbsoluteLayout Padding="10">
                 <Image Source="warzonemap.jpg"/>
-                <Image IsVisible="{Binding CrosshairEnabled}" Source="crosshair.png" Scale="0.5" AnchorX="{Binding XPos}" AnchorY="{Binding YPos}"/>
+                <Image IsVisible="{Binding CrosshairEnabled}" Source="crosshair.png" Scale="0.25" AnchorX="{Binding XPos}" AnchorY="{Binding YPos}"/>
             </AbsoluteLayout>
     </StackLayout>
     </ScrollView>

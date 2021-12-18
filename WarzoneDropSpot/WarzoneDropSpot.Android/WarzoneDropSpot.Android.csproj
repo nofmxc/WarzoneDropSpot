@@ -58,7 +58,7 @@
     <AndroidPackageFormat>aab</AndroidPackageFormat>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
-    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidKeyStore>false</AndroidKeyStore>
     <AndroidSigningKeyStore>C:\Users\beaub\AppData\Local\Xamarin\Mono for Android\Keystore\nofmxc2\nofmxc2.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>jjrr1234</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>alias1</AndroidSigningKeyAlias>

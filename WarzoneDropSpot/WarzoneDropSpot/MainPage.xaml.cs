@@ -151,16 +151,20 @@ namespace WarzoneDropSpot
             switch (randomVal)
             {
                 case int n when 0 < n && n <= 18:
-                    return "Recon Contract"; 
-                case int n when 18 < n && n <= 36:
+                    return "Recon Contract";
+                case int n when 18 < n && n <= 27:
                     return "Bounty Contract";
+                case int n when 27 < n && n <= 36:
+                    return "Big Game Bounty Contract";
                 case int n when 36 < n && n <= 40:
                     return "Most Wanted Contract";
                 case int n when 40 < n && n <= 58:
                     return "Scavenger Contract";
                 case int n when 58 < n && n <= 66:
                     return "Supply Run Contract";
-                case int n when 66 < n && n <= 78:
+                case int n when 66 < n && n <= 72:
+                    return "Supply Drop Contract";
+                case int n when 72 < n && n <= 78:
                     return "Hot Drop";
                 case int n when 78 < n && n <= 90:
                     return "Slow Drop";
