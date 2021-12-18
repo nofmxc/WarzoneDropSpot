@@ -5,4 +5,4 @@ Already available on Android here:
 [https://play.google.com/store/apps/details?id=com.beaugosse.warzonedropspot](https://play.google.com/store/apps/details?id=com.beaugosse.warzonedropspot)
 
 
-![Preview of application](https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/preview.png)
+![Preview of application](https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/PreviewImages/PhonePreviewClicked.png)
