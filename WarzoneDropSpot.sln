@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarzoneDropSpot.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarzoneDropSpot.iOS", "WarzoneDropSpot\WarzoneDropSpot.iOS\WarzoneDropSpot.iOS.csproj", "{956DF931-4BAD-46A5-94A1-A18A2352A136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarzoneDropSpot", "WarzoneDropSpot\WarzoneDropSpot\WarzoneDropSpot.csproj", "{26A1CA9C-24A5-406B-B6E2-131897D8754A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarzoneDropSpot", "WarzoneDropSpot\WarzoneDropSpot\WarzoneDropSpot.csproj", "{26A1CA9C-24A5-406B-B6E2-131897D8754A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F2EBF9F-5A87-4922-BDB4-16B87E36247F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
