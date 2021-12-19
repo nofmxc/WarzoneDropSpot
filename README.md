@@ -6,3 +6,6 @@ Already available on Android here:
 
 
 ![Preview of application](https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/PreviewImages/PhonePreviewClicked.png)
+
+# Building
+** Built with [Xamarin](https://docs.microsoft.com/en-us/xamarin/get-started/installation/windows) in Visual Studio 2022
