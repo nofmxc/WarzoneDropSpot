@@ -15,17 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PreviewImages", "PreviewImages", "{70266C30-D99A-446F-8878-F9B46073D47E}"
-	ProjectSection(SolutionItems) = preProject
-		PreviewImages\PhonePreviewClicked.png = PreviewImages\PhonePreviewClicked.png
-		PreviewImages\PhonePreviewUnclicked.png = PreviewImages\PhonePreviewUnclicked.png
-		PreviewImages\TabletClicked.png = PreviewImages\TabletClicked.png
-		PreviewImages\TabletUnclicked.png = PreviewImages\TabletUnclicked.png
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icons", "Icons", "{B3B1AC54-F820-43E9-A0A0-FE3C028F2A94}"
 	ProjectSection(SolutionItems) = preProject
 		Icons\mainIcon.jpg = Icons\mainIcon.jpg
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{BB386EC2-6BDC-44DD-B0D6-FA4BA943D0FC}"
+	ProjectSection(SolutionItems) = preProject
+		PreviewImages\Android\PhonePreviewClicked.png = PreviewImages\Android\PhonePreviewClicked.png
+		PreviewImages\Android\PhonePreviewUnclicked.png = PreviewImages\Android\PhonePreviewUnclicked.png
+		PreviewImages\Android\TabletClicked.png = PreviewImages\Android\TabletClicked.png
+		PreviewImages\Android\TabletUnclicked.png = PreviewImages\Android\TabletUnclicked.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{43394DF6-A899-4C60-9E55-E8E1CCE3FCCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +98,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB386EC2-6BDC-44DD-B0D6-FA4BA943D0FC} = {70266C30-D99A-446F-8878-F9B46073D47E}
+		{43394DF6-A899-4C60-9E55-E8E1CCE3FCCF} = {70266C30-D99A-446F-8878-F9B46073D47E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {62D23EF0-5E75-4FD0-9B7A-9C24FF421283}
