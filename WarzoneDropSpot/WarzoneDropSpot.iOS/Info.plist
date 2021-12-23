@@ -25,11 +25,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>WarzoneDropSpot</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.beaugosse.warzonedropspot</string>
+	<string>com.beaugosse.cruelantwarzonedropspot</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>WarzoneDropSpot</string>
 	<key>CFBundleShortVersionString</key>
