@@ -10,5 +10,5 @@
 Built with [Xamarin](https://docs.microsoft.com/en-us/xamarin/get-started/installation/windows) in Visual Studio 2022
 
 # Previews
-<img align="left" src="https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/PreviewImages/Android/PhonePreviewClicked.png" width="400">
-<img align="right" src="https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/PreviewImages/iOS/6.5-inch%20Screenshot%201.png" width="400">
+<img align="left" src="https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/PreviewImages/Android/PhonePreviewClicked.png" width="350">
+<img align="right" src="https://raw.githubusercontent.com/Beau-Gosse-dev/WarzoneDropSpot/master/PreviewImages/iOS/6.5-inch%20Screenshot%201.png" width="350">
